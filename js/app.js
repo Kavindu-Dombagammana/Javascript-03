@@ -58,18 +58,18 @@
 // number.reverse();
 // console.log(number);
 
-const productList = [
-    {name:"bun",instock:true,price:100},
-    {name:"milk",instock:true,price:200},
-    {name:"egg",instock:false,price:300},
-    {name:"butter",instock:true,price:400},
-    {name:"bread",instock:false,price:500}
-];
+// const productList = [
+//     {name:"bun",instock:true,price:100},
+//     {name:"milk",instock:true,price:200},
+//     {name:"egg",instock:false,price:300},
+//     {name:"butter",instock:true,price:400},
+//     {name:"bread",instock:false,price:500}
+// ];
 
-console.log(productList);
+// console.log(productList);
 
-console.log(productList.filter(function(product) {return product.instock==true}));
-console.log(productList.filter(product => product.instock==false));
+// console.log(productList.filter(function(product) {return product.instock==true}));
+// console.log(productList.filter(product => product.instock==false));
 
 // let inStockProducts = productList.filter(
 //     function(product) {
@@ -81,3 +81,57 @@ console.log(productList.filter(product => product.instock==false));
 //function productFilter(product) {
 //    return product.instock==true;
 //}
+
+//functions
+
+// // Method 01
+// function addNumbers(num1,num2) {
+//     return num1+num2;
+// }
+// console.log(addNumbers(10,20));
+
+// // Method 02
+// let getSum = function(num1,num2){
+//     return num1+num2;
+// };
+// console.log(getSum(20,20));
+// // Method 03 - Arrow Function
+
+// let getTotal = (num1,num2) => {
+//     return num1 + num2;
+// }
+// console.log(getTotal(30,50));
+
+// // Method 04 - anpnymus function
+// (num1,num2) => {
+//     return num1,num2;
+// }
+
+//  Arrow Function with single parameter
+
+// let txtValue = txtvalue =>{
+//     return txtValue;
+// }
+// console.log(txtValue("Hello World !"));
+
+// let sample = txtValue1 => txtValue1;;
+// console.log(sample("Hello World"));
+
+//Sort arrays
+// const letterList = ["B","X","g","O","N"];
+// console.log(letterList);
+
+// const sortArray = letterList.sort();
+// console.log(sortArray);
+
+//map
+
+const salaryList = [50000, 60000, 80000, 90000];
+console.log(salaryList);
+
+// let doubleSalary = salaryList.map(salary => salary*2);
+// console.log(doubleSalary);
+
+
+console.log(salaryList.map(salary => salary*2));
+
