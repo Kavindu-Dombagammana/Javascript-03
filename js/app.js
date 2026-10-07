@@ -68,14 +68,16 @@ const productList = [
 
 console.log(productList);
 
-let inStockProducts = productList.filter(
-    function(product) {
-        //return productFilter(product);
-        return product.instock==true;
-    }
-);
+console.log(productList.filter(function(product) {return product.instock==true}));
+console.log(productList.filter(product => product.instock==false));
+
+// let inStockProducts = productList.filter(
+//     function(product) {
+//         //return productFilter(product);
+//         return product.instock==true;
+//     }
+// );
 
 //function productFilter(product) {
 //    return product.instock==true;
 //}
-console.log(inStockProducts);
