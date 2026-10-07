@@ -1,0 +1,47 @@
+[
+    {
+        "id":1,
+        "name":"Saman",
+        "age":29,
+        "address":"Colombo",
+        "email":"saman@example.com"
+
+    },
+
+    {
+        "id":2,
+        "name":"Kamal",
+        "age":28,
+        "address":"Gampaha",
+        "email":"kamal@example.com"
+
+    },
+
+    {
+        "id":3,
+        "name":"Amara",
+        "age":19,
+        "address":"Colombo",
+        "email":"amara@example.com"
+
+    },
+
+    {
+        "id":4,
+        "name":"Janidu",
+        "age":25,
+        "address":"JAffna",
+        "email":"janidu@example.com"
+
+    },
+
+    {
+        "id":5,
+        "name":"Pawan",
+        "age":22,
+        "address":"Kandy",
+        "email":"pawan@example.com"
+
+    }
+
+]

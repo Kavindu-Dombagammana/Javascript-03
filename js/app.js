@@ -126,12 +126,50 @@
 
 //map
 
-const salaryList = [50000, 60000, 80000, 90000];
-console.log(salaryList);
+// const salaryList = [50000, 60000, 80000, 90000];
+// console.log(salaryList);
 
-// let doubleSalary = salaryList.map(salary => salary*2);
-// console.log(doubleSalary);
+// // let doubleSalary = salaryList.map(salary => salary*2);
+// // console.log(doubleSalary);
 
 
-console.log(salaryList.map(salary => salary*2));
+// console.log(salaryList.map(salary => salary*2));
 
+//find
+
+// const studentList = [
+//     {name:"Jagath",age:30,gender:"male"},
+//     {name:"Nayana",age:32,gender:"female"},
+//     {name:"Amara",age:33,gender:"male"},
+//     {name:"Kamal",age:35,gender:"male"},
+//     {name:"Saman",age:40,gender:"male"}
+// ]
+// console.log(studentList.find(student => student.name === "Saman"));
+
+
+// JSON - j=Javascript Object Notation 
+
+//res - response
+function loadTableOnAction(){
+    fetch("/customer.json").then(res => res.json()).then(data =>{console.log(data)
+        let tblCustomer = document.getElementById("tblCustomer");
+
+        let body ="";
+        data.forEach(element => {
+            body +=`
+                <tr>
+                    <td>${element.id}</td>
+                    <td>${element.name}</td>
+                    <td>${element.age}</td>
+                    <td>${element.address}</td>
+                    <td>${element.email}</td>
+                </tr>    
+            `
+            
+        }); 
+            
+        
+        tblCustomer.innerHTML=body;
+
+    });
+};
